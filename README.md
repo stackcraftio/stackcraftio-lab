@@ -1,2 +1,3 @@
-# stackcraftio-lab-
-a little collection of code, creative experiments, tiny worlds &amp; things built out of curiosity.
+<div align="center">
+  <img src="assets/stackcraftio-lab.png" alt="Stackcraftio Lab — pastel pixel art portfolio" width="100%" />
+</div>

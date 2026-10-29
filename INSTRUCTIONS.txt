@@ -1,0 +1,9 @@
+STACKCRAFTIO LAB - EXACT ARTWORK VERSION
+
+1. Open your public github.com/stackcraftio/stackcraftio-lab repository.
+2. Upload README.md, index.html, and the image assets/stackcraftio-lab.png in the assets folder, retaining the file paths.
+3. GitHub will display the full-length artwork directly in your repo README.
+4. Optional website: Settings > Pages > Build and deployment > Deploy from a branch > main / (root) > Save.
+   When published, the index.html page displays the exact same full-length artwork.
+
+NOTE: The image is a single raster composition. Text and buttons shown in it are visuals, not individually editable or clickable. To make real working buttons and cards, the portfolio would need to be rebuilt into components and individual art assets, which would not be an exact pixel match without those individual source assets.

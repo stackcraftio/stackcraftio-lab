@@ -1,22 +1,11 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#090c14">
-  <meta name="description" content="Stackcraftio Lab — a little collection of code, creative experiments, tiny worlds & things built out of curiosity.">
-  <title>Stackcraftio Lab ✧</title>
-  <style>
-    * { box-sizing: border-box; }
-    html { background: #090c14; }
-    body { margin: 0; min-height: 100vh; background: #090c14; }
-    main { width: min(100%, 1312px); margin: 0 auto; }
-    .portfolio { display: block; width: 100%; height: auto; }
-  </style>
-</head>
-<body>
-  <main>
-    <img class="portfolio" src="assets/stackcraftio-lab.png" width="1312" height="1199" alt="Stackcraftio Lab: a pastel pixel-art portfolio featuring a welcome banner; little worlds for ByteBuddy, AfterDark, StudyBloom, PixelWeather, Moodify, and CodeVault; science greenhouse with BioSignal Studio, ECGLab, and Wearable ECG Classification; and a currently growing projects section.">
-  </main>
-</body>
-</html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0b0d17"><meta name="description" content="Stackcraftio Lab — little worlds, creative experiments, and biomedical coding projects."><title>✿ Stackcraftio Lab</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="sparkles" aria-hidden="true">✦　　　⋆　　　　　　✧　　　⋆</div>
+<div class="shell">
+<header class="hero" id="home"><img src="assets/banner.webp" alt="Stackcraftio Lab pixel-art night sky with flowers, cats, a glowing moon and retro computers"></header>
+<nav class="filters" aria-label="Project filters"><button class="active" data-filter="all">♥ &nbsp; All projects</button><button data-filter="fun">✿ &nbsp; Fun experiments</button><button data-filter="science">⚗ &nbsp; Science & signals</button><button data-filter="building">✦ &nbsp; In progress</button><button data-filter="planned">❀ &nbsp; Planned ideas</button><span class="nav-note">› always curious.<br>› always creating. ♡</span></nav>
+<section class="section" id="little-worlds" data-group="fun"><div class="section-header"><h2><span class="num">01.</span> little worlds <em>✦</em></h2><span class="rule"></span><p>fun, creative & experimental projects. tiny applications, playful tools and little corners of the internet.</p></div><div class="cards" id="fun-cards"></div></section>
+<section class="section" id="science-greenhouse" data-group="science"><div class="section-header"><h2><span class="num">02.</span> science greenhouse <em>☾</em></h2><span class="rule"></span><p>biomedical engineering, signal processing and data-driven health applications. turning signals into insight. ♡</p></div><div class="science-cards" id="science-cards"></div></section>
+<section class="section growing" id="currently-growing"><div class="section-header"><h2><span class="num">03.</span> currently growing <em>✦</em></h2><span class="rule"></span><p>ideas, experiments and future projects. a little space for the next adventures.</p></div><div class="grow-list" id="grow-list"></div></section>
+<footer><span>✿ ✿ ✦ ✿ ✿</span><span class="footer-pill">MADE WITH CURIOSITY ♡</span><span>✿ ✦ ✿ ✿ ✿</span></footer>
+</div><div id="toast" class="toast" role="status" aria-live="polite"></div><script src="script.js" defer></script></body></html>

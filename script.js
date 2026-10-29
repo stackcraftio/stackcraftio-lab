@@ -9,6 +9,12 @@ const fun = [
  {name:'CodeVault',file:'codevault',type:'fun',status:'planned',desc:'a personal code snippet manager and organiser.',color:'#e6caff',edge:'#ad87e5',icon:'▤'},
  {name:'Calculator',file:'calculator',type:'fun',status:'complete',desc:'a pastel-themed calculator built with Flask.',color:'#ffe6ac',edge:'#d9af70',icon:'✧',url:repo('Calculator')},
  {name:'StarryNotes',file:'starrynotes',type:'fun',status:'planned',desc:'a dreamy little notebook for thoughts and ideas.',color:'#e8d4ff',edge:'#a38bdb',icon:'✧'},
+ {name:'BookNook',file:'booknook',type:'fun',status:'planned',desc:'a cosy virtual bookshelf for tracking reads and favourites.',color:'#ffe0c7',edge:'#dca380',icon:'📚'},
+ {name:'FrogForecast',file:'frogforecast',type:'fun',status:'planned',desc:'a tiny frog who dresses for the weather.',color:'#c8efd3',edge:'#84c6a0',icon:'🐸'},
+ {name:'PotionLab',file:'potionlab',type:'fun',status:'planned',desc:'mix magical potions and discover silly effects.',color:'#d7c7ff',edge:'#a98add',icon:'⚗'},
+ {name:'PixelPost',file:'pixelpost',type:'fun',status:'planned',desc:'create little digital postcards with stickers and messages.',color:'#ffd2dc',edge:'#e69cba',icon:'✉'},
+ {name:'TinyTerrarium',file:'tinyterrarium',type:'fun',status:'planned',desc:'grow and care for your own miniature pixel garden.',color:'#c8efd3',edge:'#84c6a0',icon:'✿'},
+ {name:'MiniArcade',file:'miniarcade',type:'fun',status:'planned',desc:'a little arcade filled with nostalgic browser games.',color:'#ffe4b9',edge:'#d8ae74',icon:'★'},
 ];
 const science = [
  {name:'BioSignal Studio',file:'biosignal',status:'planned',desc:'an interactive biomedical signal explorer for ECG, PPG and more.',color:'#baf0e1',edge:'#65bba5',icon:'∿'},

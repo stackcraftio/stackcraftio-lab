@@ -16,6 +16,7 @@ const science = [
 ];
 const growing = [
  
+ 
  {name:'little-bloom',desc:'animated digital flower',icon:'🌷',url:'https://stackcraftio.github.io/little-bloom/'},
  {name:'SpendScope',desc:'personal finance tracker',icon:'🪙',url:repo('SpendScope')},
  {name:'TaskFlow',desc:'productivity tool',icon:'📋',url:repo('taskflow')},

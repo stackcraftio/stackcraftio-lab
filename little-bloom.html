@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>little bloom ✿ — stackcraftio</title>
+<style>
+:root {color-scheme:dark;--bg:#090c13;--ink:#eee9ea;--muted:#9ca1ae;--pink:#f1acbf;}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 42%,#1c1d31 0%,#0b101a 48%,#070a10 100%);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--ink);overflow:hidden}
+.scene{width:min(100%,800px);height:min(98vh,850px);min-height:580px;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.scene:before{content:"";pointer-events:none;position:absolute;inset:0;background-image:radial-gradient(#eae8f5 0.8px,transparent 1px);background-size:69px 59px;opacity:.12;mask-image:linear-gradient(#000 30%,transparent 83%)}
+header{position:absolute;top:28px;left:30px;right:30px;display:flex;justify-content:space-between;align-items:center;letter-spacing:.19em;font-size:11px;color:#9698aa}header .mark{color:#e0d9e1;letter-spacing:.25em}
+svg{position:relative;width:min(95vw,590px);height:min(70vh,630px);overflow:visible;filter:drop-shadow(0 9px 22px rgba(241,168,194,.12))}
+.base{opacity:.33}.stem{fill:none;stroke:#7b9a7f;stroke-width:6;stroke-linecap:round;stroke-dasharray:465;stroke-dashoffset:465;filter:drop-shadow(0 0 6px rgba(150,209,163,.15))}
+.leaf{fill:url(#leafgrad);transform-box:fill-box;transform-origin:0% 100%;opacity:0;transform:scale(.12) rotate(-17deg)}
+.leaf.right{transform-origin:100% 100%;transform:scale(.12) rotate(17deg)}
+.vein{fill:none;stroke:#d3e9bb;stroke-width:1.6;stroke-linecap:round;opacity:0}
+.petal{opacity:0;transform-box:fill-box;transform-origin:center bottom;transform:scale(.03) rotate(var(--twist,0deg));filter:drop-shadow(0 2px 5px rgba(255,166,193,.17))}
+.petal.inner{filter:none}.core{opacity:0;transform-box:fill-box;transform-origin:center;transform:scale(0)}
+.glow{opacity:0}.spark{opacity:0;transform-box:fill-box;transform-origin:center}
+.bloom .stem{animation:draw 2.4s cubic-bezier(.24,.72,.32,1) forwards}
+.bloom .leaf.one{animation:leafgrow 1.15s 1.65s cubic-bezier(.18,1.35,.36,1) forwards}
+.bloom .leaf.two{animation:leafgrow 1.15s 2s cubic-bezier(.18,1.35,.36,1) forwards}
+.bloom .vein.one{animation:appear .6s 2.15s forwards}.bloom .vein.two{animation:appear .6s 2.5s forwards}
+.bloom .petal{animation:open 1.55s cubic-bezier(.19,1.22,.32,1) forwards;animation-delay:calc(2.8s + var(--i)*.16s)}
+.bloom .petal.inner{animation-delay:calc(4.15s + var(--i)*.1s)}
+.bloom .core{animation:coregrow .8s 5.25s cubic-bezier(.15,1.4,.5,1) forwards}
+.bloom .glow{animation:appear 2s 5.3s forwards}
+.bloom .spark{animation:sparkle 3s calc(5.6s + var(--i)*.3s) ease-in-out infinite}
+@keyframes draw{to{stroke-dashoffset:0}}@keyframes leafgrow{0%{opacity:0;transform:scale(.12) rotate(-17deg)}75%{opacity:1}100%{opacity:1;transform:scale(1) rotate(0)}}
+@keyframes appear{to{opacity:1}}@keyframes open{0%{opacity:0;transform:scale(.03) rotate(var(--twist))}75%{opacity:1}100%{opacity:1;transform:scale(1) rotate(0)}}
+@keyframes coregrow{to{opacity:1;transform:scale(1)}}@keyframes sparkle{0%,100%{opacity:0;transform:translateY(7px) scale(.5)}50%{opacity:.8;transform:translateY(-12px) scale(1)}}
+.foot{position:absolute;bottom:28px;text-align:center;display:grid;gap:12px;justify-items:center}h1{margin:0;font-family:Georgia,serif;font-size:clamp(24px,4vw,36px);letter-spacing:.08em;font-weight:400}p{margin:0;color:var(--muted);font-size:12px;letter-spacing:.08em}
+button{margin-top:9px;border:1px solid #626075;background:#ffffff0a;color:#f2e9ee;border-radius:100px;padding:10px 21px;font:inherit;font-size:12px;letter-spacing:.08em;cursor:pointer;transition:background .2s,transform .2s}button:hover{background:#ffffff1b;transform:translateY(-2px)}button:focus-visible{outline:2px solid #f1acbf;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.bloom .stem{stroke-dashoffset:0;animation:none}.bloom .leaf,.bloom .vein,.bloom .petal,.bloom .core,.bloom .glow{opacity:1;transform:none;animation:none}.bloom .spark{display:none}}
+</style>
+</head>
+<body>
+<main class="scene" aria-label="A flower grows from its stem, grows two leaves, and blooms into a pink flower">
+<header><span class="mark">stackcraftio / little bloom</span><span>001 — growing gently</span></header>
+<svg id="flower" class="bloom" viewBox="0 0 520 600" role="img" aria-label="Animated pale pink flower growing from the ground">
+<defs>
+ <linearGradient id="stemgrad" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#5e796b"/><stop offset="1" stop-color="#b5c99c"/></linearGradient>
+ <linearGradient id="leafgrad" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#3e705c"/><stop offset=".52" stop-color="#80aa82"/><stop offset="1" stop-color="#b6cb9b"/></linearGradient>
+ <radialGradient id="petalgrad" cx="55%" cy="75%" r="86%"><stop stop-color="#ffe7d8"/><stop offset=".42" stop-color="#f5bacc"/><stop offset=".83" stop-color="#de91ae"/><stop offset="1" stop-color="#b8769c"/></radialGradient>
+ <radialGradient id="innergrad"><stop stop-color="#fff2dd"/><stop offset="1" stop-color="#f4c0c8"/></radialGradient>
+ <radialGradient id="halog"><stop stop-color="#f6a4c1" stop-opacity=".18"/><stop offset="1" stop-color="#f6a4c1" stop-opacity="0"/></radialGradient>
+</defs>
+<ellipse class="base" cx="260" cy="553" rx="69" ry="8" fill="#394c4e"/>
+<path class="stem" d="M260 548 C266 490 240 441 257 391 S271 314 260 258 S258 219 260 192" stroke="url(#stemgrad)"/>
+<g class="leaf one"><path d="M255 417 C200 414 166 391 151 352 C200 349 241 364 255 417Z"/><path class="vein one" d="M253 415 Q210 382 177 369"/></g>
+<g class="leaf right two"><path d="M263 360 C312 346 341 320 353 276 C308 286 275 310 263 360Z"/><path class="vein two" d="M266 354 Q309 317 330 300"/></g>
+<circle class="glow" cx="260" cy="189" r="118" fill="url(#halog)"/>
+<g id="petals"></g>
+<g class="core"><circle cx="260" cy="188" r="23" fill="#bd774f"/><circle cx="260" cy="185" r="17" fill="#f2ce81"/><g id="seeds" fill="#a86653"></g></g>
+<g id="sparks"></g>
+</svg>
+<div class="foot"><h1>a little bloom ✿</h1><p>even the smallest things take time to grow.</p><button id="again" type="button">↻ grow again</button></div>
+</main>
+<script>
+// Every part of this flower is SVG generated in code — no image files.
+const svgNS='http://www.w3.org/2000/svg';
+const petals=document.querySelector('#petals');
+for(let i=0;i<10;i++){
+  const group=document.createElementNS(svgNS,'g');group.setAttribute('transform',`rotate(${i*36} 260 188)`);
+  const petal=document.createElementNS(svgNS,'ellipse');
+  petal.setAttribute('class','petal');petal.setAttribute('cx','260');petal.setAttribute('cy','135');
+  petal.setAttribute('rx','30');petal.setAttribute('ry','67');petal.setAttribute('fill','url(#petalgrad)');
+  petal.style.setProperty('--i',i);petal.style.setProperty('--twist',(i%2?'-35deg':'35deg'));
+  group.appendChild(petal);petals.appendChild(group);
+}
+for(let i=0;i<7;i++){
+  const group=document.createElementNS(svgNS,'g');group.setAttribute('transform',`rotate(${i*360/7} 260 188)`);
+  const petal=document.createElementNS(svgNS,'ellipse');
+  petal.setAttribute('class','petal inner');petal.setAttribute('cx','260');petal.setAttribute('cy','165');
+  petal.setAttribute('rx','16');petal.setAttribute('ry','38');petal.setAttribute('fill','url(#innergrad)');
+  petal.style.setProperty('--i',i);petal.style.setProperty('--twist','20deg');group.appendChild(petal);petals.appendChild(group);
+}
+const seeds=document.querySelector('#seeds');
+for(let i=0;i<15;i++){
+ const dot=document.createElementNS(svgNS,'circle');let a=i*2.39996,r=Math.sqrt(i/15)*13;
+ dot.setAttribute('cx',260+Math.cos(a)*r);dot.setAttribute('cy',185+Math.sin(a)*r);dot.setAttribute('r',i%3===0?1.9:1.2);seeds.appendChild(dot);
+}
+const sparks=document.querySelector('#sparks');
+[[156,170],[350,139],[397,240],[135,273],[330,63],[197,86]].forEach(([x,y],i)=>{
+ const c=document.createElementNS(svgNS,'circle');c.setAttribute('class','spark');c.setAttribute('cx',x);c.setAttribute('cy',y);c.setAttribute('r',i%2?2:1.5);c.setAttribute('fill','#f6dae8');c.style.setProperty('--i',i);sparks.appendChild(c);
+});
+document.querySelector('#again').addEventListener('click',()=>{
+ const flower=document.querySelector('#flower');flower.classList.remove('bloom');void flower.getBoundingClientRect();flower.classList.add('bloom');
+});
+</script>
+</body>
+</html>

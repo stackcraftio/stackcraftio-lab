@@ -7,7 +7,8 @@ const fun = [
  {name:'PixelWeather',file:'pixelweather',type:'fun',status:'planned',desc:'a pixel-art weather application with changing skies.',color:'#bee8ff',edge:'#77c6e3',icon:'☁'},
  {name:'Moodify',file:'moodify',type:'fun',status:'planning',desc:'mood-based music discovery with beautiful visuals.',color:'#ffd1cb',edge:'#ed9a9e',icon:'♫'},
  {name:'CodeVault',file:'codevault',type:'fun',status:'planned',desc:'a personal code snippet manager and organiser.',color:'#e6caff',edge:'#ad87e5',icon:'▤'},
- {name:'Calculator',file:'calculator',type:'fun',status:'complete',desc:'a pastel-themed calculator built with Flask.',color:'#ffe6ac',edge:'#d9af70',icon:'✧',url:repo('Calculator')}
+ {name:'Calculator',file:'calculator',type:'fun',status:'complete',desc:'a pastel-themed calculator built with Flask.',color:'#ffe6ac',edge:'#d9af70',icon:'✧',url:repo('Calculator')},
+ {name:'StarryNotes',file:'starrynotes',type:'fun',status:'planned',desc:'a dreamy little notebook for thoughts and ideas.',color:'#e8d4ff',edge:'#a38bdb',icon:'✧'},
 ];
 const science = [
  {name:'BioSignal Studio',file:'biosignal',status:'planned',desc:'an interactive biomedical signal explorer for ECG, PPG and more.',color:'#baf0e1',edge:'#65bba5',icon:'∿'},

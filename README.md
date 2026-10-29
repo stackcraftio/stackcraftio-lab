@@ -18,5 +18,3 @@ A pastel pixel-art portfolio of creative coding experiments and biomedical proje
 ### Edit projects
 
 Change titles, descriptions, status labels or repo URLs in `script.js`. All cards are actual HTML elements. A planned project intentionally displays **COMING SOON ♡** rather than a fake link. Add a URL once that repository is created. To change artwork, replace the corresponding individual image in `assets/`.
-
-> The page is real HTML/CSS/JavaScript. The banner and project illustrations are cropped from the reference artwork you provided; the artwork itself is not editable as text. Everything else is editable code.

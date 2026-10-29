@@ -15,7 +15,7 @@ const science = [
  {name:'Wearable ECG Classification',file:'wearable',status:'building',desc:'on-device classification of wearable ECG signals. Dissertation project in progress.',color:'#c3ddff',edge:'#719ddd',icon:'▥'}
 ];
 const growing = [
- {name:'little-bloom',desc:'animated digital flower',icon:'🌷'},
+ {name:'little-bloom',desc:'animated digital flower',icon:'🌷',url: "little-bloom.html"},
  {name:'SpendScope',desc:'personal finance tracker',icon:'🪙',url:repo('SpendScope')},
  {name:'TaskFlow',desc:'productivity tool',icon:'📋',url:repo('taskflow')},
  {name:'Spotify EDA',desc:'music data analysis',icon:'🎵',url:repo('Spotify-popularity-eda')},

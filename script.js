@@ -1,6 +1,7 @@
 // Edit project information here. Planned projects deliberately have no fake repository URLs.
 const repo = (name) => `https://github.com/stackcraftio/${name}`;
 const fun = [
+ {name: 'Sword Sovereign',file: 'sword-sovereign',type: 'fun',status: 'complete',desc: 'command thousands of glowing swords with real-time hand gestures in a magical 3D world.',color: '#d6e4ff',edge: '#83a7ec',icon: '⚔',url: 'https://stackcraftio.github.io/Sword-Sovereign/'},
  {name:'ByteBuddy',file:'bytebuddy',type:'fun',status:'planned',desc:'a tiny virtual pet with animations and interactive care.',color:'#f8c1ee',edge:'#d47cbf',icon:'♡'},
  {name:'AfterDark',file:'afterdark',type:'fun',status:'planned',desc:'an astronomy dashboard with moon phases, stars and night skies.',color:'#d5c6ff',edge:'#9382e6',icon:'☾'},
  {name:'StudyBloom',file:'studybloom',type:'fun',status:'planning',desc:'a pomodoro study timer that helps you grow while you focus.',color:'#c2f0df',edge:'#6ebdb1',icon:'✿'},
@@ -15,7 +16,8 @@ const fun = [
  {name:'PixelPost',file:'pixelpost',type:'fun',status:'planned',desc:'create little digital postcards with stickers and messages.',color:'#ffd2dc',edge:'#e69cba',icon:'✉'},
  {name:'TinyTerrarium',file:'tinyterrarium',type:'fun',status:'planned',desc:'grow and care for your own miniature pixel garden.',color:'#c8efd3',edge:'#84c6a0',icon:'✿'},
  {name:'MiniArcade',file:'miniarcade',type:'fun',status:'planned',desc:'a little arcade filled with nostalgic browser games.',color:'#ffe4b9',edge:'#d8ae74',icon:'★'},
-];
+ ];
+
 const science = [
  {name:'BioSignal Studio',file:'biosignal',status:'planned',desc:'an interactive biomedical signal explorer for ECG, PPG and more.',color:'#baf0e1',edge:'#65bba5',icon:'∿'},
  {name:'ECGLab',file:'ecglab',status:'planned',desc:'ECG signal processing toolkit with analysis, visualisation and feature extraction.',color:'#ffd0eb',edge:'#d884b9',icon:'♡'},

@@ -34,11 +34,13 @@ const growing = [
 ];
 const esc = t=>String(t).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 
+
 function action(p) {
   return p.url
     ? `<a class="card-action" target="_blank" rel="noopener noreferrer" href="${esc(p.url)}">${p.name === 'Sword Sovereign' ? 'PLAY GAME ⚔' : 'VIEW REPO →'}</a>`
     : `<button class="card-action" data-coming="${esc(p.name)}" type="button">COMING SOON ♡</button>`;
 }
+
 
 function small(p){return `<article class="project" data-status="${p.status}" style="--tint:${p.color};--edge:${p.edge};--deep:#655085"><div class="window-top"><span class="w-title">${p.icon} ${esc(p.name)}.exe</span><span class="controls">▣ ×</span></div><img class="project-art" src="assets/${p.file}.webp" alt="Pixel-art illustration for ${esc(p.name)}" loading="lazy"><div class="project-body"><h3>${esc(p.name)}</h3><p>${esc(p.desc)}</p><span class="status ${p.status}">${p.status}</span>${action(p)}</div></article>`}
 function big(p){return `<article class="science-card" data-status="${p.status}" style="--tint:${p.color};--edge:${p.edge};--deep:#655085"><div class="science-content"><div class="window-top"><span>${p.icon} ${esc(p.name)}</span><span>▣ ×</span></div><div class="science-inner"><img src="assets/${p.file}.webp" alt="Pixel-art illustration for ${esc(p.name)}" loading="lazy"><div class="science-copy"><h3>${esc(p.name)}</h3><p>${esc(p.desc)}</p><span class="status ${p.status}">${p.status==='building'?'in progress':p.status}</span>${action(p)}</div></div></div></article>`}
